@@ -17,7 +17,6 @@ What's more, This Document originally support **multi-language**(No Google Trans
 _**Each MarkDown files should have these front matter: https://vuepress.vuejs.org/guide/frontmatter.html**_
 
 File Structure
-
 docs
 ├─ README.md (Home)
 ├─ example.md (Show some editing skills)
