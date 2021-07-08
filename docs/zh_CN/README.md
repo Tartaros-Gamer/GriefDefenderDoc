@@ -3,7 +3,7 @@ home: true
 heroImage: /assets/logo.png
 actionBtn:
   text: 查询 Wiki
-  link: /wiki/
+  link: /zh_CN/wiki/
   type: primary
   ghost: false
   size: large
