@@ -2,7 +2,7 @@ module.exports = {
   theme:"antdocs",
   title: "GriefDefender",
   description: "A new way to secure your world.",
-  base: "/",
+  base: "./",
   head: [
     ["link",{ rel: "icon",href: "/assets/logo.png" }]
   ],
