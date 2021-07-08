@@ -1,34 +1,33 @@
 ---
-title: Introduction
+
+title: 简介
+
 ---
 
 # GriefDefender Wiki
-*For Bukkit/Sponge servers.*
 
-* [Discord Server](https://discord.gg/jy4FQDz) - for support, questions, or general GriefDefender related talk.
+为 Bukkit/Sponge 服务器定制
 
-A universal solution for protecting your servers against grief.  
-It works out of the box and fully integrates with [LuckPerms](https://ci.lucko.me/job/LuckPerms/).
-
-> **Note: Since GriefDefender relies heavily on permission contexts, it has a hard dependency on [LuckPerms]. See <https://github.com/lucko/LuckPerms/wiki/Migration> on how to migrate to LP from another permissions plugin.
+一个保护你服务器免遭玩家恶意破坏的通用解决方案<br />开箱即用并且与 [LuckPerms](https://ci.lucko.me/job/LuckPerms/) 完全兼容。
 
 ## Features
-* **NEW!** Rent System - Allow your users to establish hotels, apartments, cabins and much more to be rented! (Still in current development)
-* **NEW!** Spawn-limits to avoid having farms with huge amount of entities in the same place/chunk (configurabe per claim, all claims, wilderness and much more) - Boost your server performance with this feature!
-* **NEW!** Customizable options per claim, such as teleport delay, pvp handlers, player gamemodes, player flight mode, and much more.
-* Advanced permission options (meta).
-* Command system built on Aikar's [ACF] library.
-* Economy mode to buy/sell claims with currency.
-* Extendable API.
-* Flag system powered by permission contexts to handle any protection combination you wish.
-* GriefPrevention Bukkit migrator.
-* HOCON configuration system with ability to override settings per world, dimension, or globally.
-* Inherit system that allows parent claims to enforce protection to children.
-* Interactive chat UI for managing claims and flags.
-* Redstone protection.
-* Restore claims back to world gen state.
-* Schematics for admins to backup/restore claims. (Useful for events)
-* Tracking system for improved protection.  
+
+* **NEW!** 租凭系统 - 允许您的用户建立酒店，公寓，小屋和更多的出租！（目前仍在开发中）
+* **NEW!** 生成限制系统 - 以避免在同一个地方/块拥有大量实体的农场（每个声明、所有声明、荒野等配置）--使用此功能提高您的服务器性能！
+* **NEW!** 每个领地都可以，如传送延迟，pvp处理程序，玩家游戏模式，玩家飞行模式，以及更多。
+* 高级权限选项 (meta)。
+* 基于 Aikar 的[ACF](https://github.com/aikar/commands) 库所构建的指令系统。
+* 可使用货币购买 / 出售领地的经济系统。
+* 可扩展的 API 。
+* 基于权限节点驱动的标签（flag）系统可以提供任何你所希望的保护组合。
+* GriefPrevention Bukkit 迁移器。
+* 能够重写单个世界、维度或者全局设置的 HOCON 配置系统。
+* 允许父领地强制保护子领地的继承系统。
+* 用于管理领地以及 其标签（flag）的可交互界面。
+* 红石保护。
+* 恢复领地到世界创建时的状态。
+* 用于让管理员备份 / 恢复领地的 Schematics 。 (对于事件来说很有用)
+* 用于改进保护措施的追踪系统。
 * WorldGuard support.
 * Vault support.
 * Dynmap support.

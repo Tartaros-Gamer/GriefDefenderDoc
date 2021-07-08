@@ -1,10 +1,12 @@
 ---
-title: Command
+
+title: 命令
+
 ---
 
 # Command Overview
 
-Arguments Key: \<required\> [optional]
+参数表示法: \<required\> [optional]
 
 ### Claims
 
@@ -48,13 +50,14 @@ Arguments Key: \<required\> [optional]
 * [/gd flag reset](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-flag-reset)
 
 ### Options
+
 * [/gd option [\<option\> \<value\>]](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-option-claim)
 * [/gd option group \<group\> [\<option\> \<value\>]](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-option-group)
 * [/gd option player \<player\> [\<option\> \<value\>]](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-option-player)
 
-### Trust  
+### Trust
 
-Note: Use `public` if you want to trust all users.
+注意: 使用 `public` 代表您信任所有用户。
 
 * [/gd trust player \<player\>|public <accessor|container|builder|manager> ](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-trust-player)
 * [/gd trust group \<group\>|public <accessor|container|builder|manager> ](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-trust-group)
@@ -87,7 +90,7 @@ Note: Use `public` if you want to trust all users.
 * [/gd reload](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-reload)
 * [/gd unban [hand | \<type\> \<target\>]](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-unban)
 
-### Main Command
+### 主命令
 
 * [/gd](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd)
 
@@ -95,444 +98,554 @@ Note: Use `public` if you want to trust all users.
 
 * [/gd version](https://github.com/bloodmc/GriefDefender/wiki/Commands#gd-version)
 
+# 命令详解
 
-# Command Detail
+### 领地类
 
-### Claims
-___
+---
+
 #### `/gd abandon claim`
-Abandons a claim
 
-___
+放弃一个指定的领地。
+
+---
+
 #### `/gd abandon all`
-Abandons ALL your claims
 
-___
+放弃您所有的领地。
+
+---
+
 #### `/gd abandon top`
-Abandons a claim and all its subdivisions
 
-___
+放弃您的母领地及其所有下属子领地。
+
+---
+
 #### `/gd buy blocks`
-**Aliases**: `buyblocks`  
-**Arguments**: `<numberOfBlocks>`  
 
-Purchases additional claim blocks with server money. Doesn't work on servers without any economy plugin.
+**Aliases**: `buyblocks`
+**Arguments**: `<numberOfBlocks>`
 
-___
+用服务器货币购买更多的领地数。\n注意: 需要经济插件。
+
+---
+
 #### `/gd buy claim`
 
-View a list of claims for sale. Click [Buy] to purchase.
+列出所有可供购买的领地。点击 [购买] 来购买。
 
-___
+---
+
 #### `/gd claim contract`
-**Aliases**: `claimcontract`, `contractclaim`  
-**Arguments**: `<amount> [direction]`  
-Contracts/Shrinks the claim from the direction you are facing.   
 
-___
+**Aliases**: `claimcontract`, `contractclaim`<br />**Arguments**: `<amount> [direction]`<br />使领地范围从您所面对的方向向内缩小。
+
+---
+
 #### `/gd claim create`
-**Aliases**: `claimcreate`  
-**Arguments**: `<radius> [type]`  
-Creates a claim around the player of the given type. If no claimtype (or an incorrect one) is specified, a basic claim will be created.   
 
-___
+**Aliases**: `claimcreate`<br />**Arguments**: `<radius> [type]`<br />在玩家周围创建一个领地。如果未指定类型，默认创建 基础 领地。
+
+---
+
 #### `/gd claim expand`
-**Aliases**: `claimexpand`, `expandclaim`  
-**Arguments**: `<amount> [direction]`  
-Expands the claim in the direction you are facing.   
 
-___
+**Aliases**: `claimexpand`, `expandclaim`<br />**Arguments**: `<amount> [direction]`<br />使领地范围从您所面对的方向向外延展。
+
+---
+
 #### `/gd claim farewell`
-**Arguments**: `<message>`  
-Sets the farewell message of your claim
 
-To unset, `/gd claim farewell clear`
+**Arguments**: `<message>`<br />设定离开领地时候的告别讯息。
 
-___
+如果要取消, `/gd claim farewell clear`
+
+---
+
 #### `/gd claim greeting`
-**Arguments**: `<message>`  
-Sets the greeting message of your claim
 
-To unset, `/gd claim greeting clear`
+**Arguments**: `<message>`<br />设定进入领地时候的问候讯息。
 
-___
+如果要取消, `/gd claim greeting clear`
+
+---
+
 #### `/gd claim info`
-**Aliases**: `claiminfo`  
-**Arguments**: `[id]`  
 
-Gets information about a claim you are standing in or by claim id.
+**Aliases**: `claiminfo`
+**Arguments**: `[id]`
 
-___
+显示您所处领地的所有可知的信息。
+
+---
+
 #### `/gd claim inherit`
-**Aliases**: `inherit`  
 
-Toggles parent claim inherit mode
+**Aliases**: `inherit`
 
-___
+切换是否使该领地从母领地继承权限设置。
+
+---
+
 #### `/gd claim investigate`
-**Aliases**: `claiminvestigate`  
-**Arguments**: `[area|hide|hideall]`  
 
-Investigates the target block player is looking at or nearby claims.
+**Aliases**: `claiminvestigate`
+**Arguments**: `[area|hide|hideall]`
 
-___
+调查该目标或附件领地。
+
+---
+
 #### `/gd claim list`
-**Aliases**: `claimlist`  
-**Arguments**: `[<player> [world]]`  
 
-List information about a player's claims.
+**Aliases**: `claimlist`
+**Arguments**: `[<player> [world]]`
 
-___
+显示一名玩家的领地。
+
+---
+
 #### `/gd claim name`
-**Arguments**: `<name>`  
-Sets the name of your claim
 
-___
+**Arguments**: `<name>`<br />设定领地的名称。
+
+---
+
 #### `/gd claim rent`
-**Arguments**: `create [<rate> [<max_days>]]|info|list|cancel]`  
-Used to rent/list claims.  
-Note: Requires economy plugin.
 
-___
+**Arguments**: `create [<rate> [<max_days>]]|info|list|cancel]`<br />用于 租用/列出 领地。<br />注意: 需要经济插件。
+
+---
+
 #### `/gd claim setspawn`
-**Aliases**: `claimsetspawn`  
 
-Sets the spawn of your claim to the location you are standing in.
+**Aliases**: `claimsetspawn`
 
-___
+为您所处的领地设置重生点。
+
+---
+
 #### `/gd claim spawn`
-**Aliases**: `claimspawn`  
 
-Teleports you to claim spawn, if available.
+**Aliases**: `claimspawn`
 
-___
+传送至领地重生点(如有设置)。
+
+---
+
 #### `/gd claim transfer`
-**Aliases**: `transferclaim`  
-**Arguments**: `<player>`  
 
-Transfer the claim you're standing in to a player.
+**Aliases**: `transferclaim`
+**Arguments**: `<player>`
 
-___
+将您所处的领地转交给其他玩家。
+
+---
+
 #### `/gd claim we`
-Claims a selection made in WorldEdit.  
-Note: This command will not work unless the server has WorldEdit.
 
-___
+使用小木斧(worldedit)所选中地区设定为领地。<br />
+
+---
+
 #### `/gd cuboid`
-**Aliases**: `cuboid`  
 
-Toggles 3D cuboid claims mode.
+**Aliases**: `cuboid`
 
-___
+切换 3D 立体领地模式。
+
+---
+
 #### `/gd giveblocks`
-**Aliases**: `giveblocks`  
+
+**Aliases**: `giveblocks`
 **Arguments**: `<player> <amount>`
 
-Gives claim blocks to another player
-___
+将领地玩家给另一名玩家。
+
+---
+
 #### `/gd mode basic`
+
 **Aliases**: `modebasic`
 
-Switches the shovel tool back to basic claims mode.
+切换领地工具至 基础领地 模式。
 
-___
+---
+
 #### `/gd mode subdivide`
-**Aliases**: `modesubdivide`  
 
-Switches the shovel tool to subdivision mode, used to subdivide your claims
+**Aliases**: `modesubdivide`
 
-___
+将领地工具切换为 子领地细分 模式,用作细分您的领地。
+
+---
+
 #### `/gd player info`
-**Arguments**: `<player> <world>|<player>|[<world>]`  
 
-Gets information about a player and their claimblocks
+**Arguments**: `<player> <world>|<player>|[<world>]`
 
-___
-#### `/gd player trapped`  
-**Aliases**: `trapped`  
+显示有关一个玩家的信息。
 
-Teleports the player to a safe location if stuck and unable to build.
+---
 
-___
-#### `/gd player unlockdrops`  
-**Aliases**: `unlockdrops`  
+#### `/gd player trapped`
 
-Allows other players to pickup any items dropped from death.  
+**Aliases**: `trapped`
 
-___
+如果玩家被卡住并且无法放置方块，这将传送玩家到一个安全的位置。
+
+---
+
+#### `/gd player unlockdrops`
+
+**Aliases**: `unlockdrops`
+
+允许其他玩家拾取死亡物品。
+
+---
+
 #### `/gd sell blocks`
-**Aliases**: `sellblocks`  
-**Arguments**: `<numberOfBlocks>`  
 
-Sell your claim blocks for server money. Doesn't work on servers without any economy plugin.
+**Aliases**: `sellblocks`
+**Arguments**: `<numberOfBlocks>`
 
-___
+售出您的领地方块以获取货币。\n注意: 需要经济插件。
+
+---
+
 #### `/gd sell claim`
-**Arguments**: `<price>`  
 
-Puts your claim up for sale at the set price. To disable sale, set the price to -1 or set ForSale setting in /claiminfo to false.
+**Arguments**: `<price>`
 
+将您的领地明码标价售出。要停止待售，将价格设置为 -1 或在 /claiminfo 中将待售设置为 否。
 
 ### Flags
 
-___
+---
+
 #### `/gd flag debug`
+
 **Aliases**: `cfd`
 
-Toggles claim flag debug mode
+切换是否启用 领地标签 调试模式。
 
-___
+---
+
 #### `/gd flag claim`
-**Aliases**: `cf`  
-**Arguments**: `[<flag> <target> <value> context[key=value]]`  
 
-Gets/Sets claim flags in the claim you are standing in.
+**Aliases**: `cf`
+**Arguments**: `[<flag> <target> <value> context[key=value]]`
 
-___
+获取/设置 您目前所处领地的标签。
+
+---
+
 #### `/gd flag group`
-**Aliases**: `cfg`  
-**Arguments**: `<group> <flag> <target> <value> context[key=value]]`  
 
-Gets/Sets flag permission for a group in claim you are standing in.
+**Aliases**: `cfg`
+**Arguments**: `<group> <flag> <target> <value> context[key=value]]`
 
-___
+获取/设置 您目前所处领地的权限组标签。
+
+---
+
 #### `/gd flag player`
-**Aliases**: `cfp`  
-**Arguments**: `<player> <flag> <target> <value> context[key=value]]`  
 
-Adds flag permission to player.
+**Aliases**: `cfp`
+**Arguments**: `<player> <flag> <target> <value> context[key=value]]`
 
-___
+为玩家添加标签权限。
+
+---
+
 #### `/gd flag reset`
+
 **Aliases**: `cfr`
 
-Resets a claim to flag defaults.
-
+将领地标签重置为默认。
 
 ### Options
-___
+
+---
+
 #### `/gd option claim `
-**Aliases**: `co`  
-**Arguments**: `[<option> <value>]`  
 
-Gets/Sets options in the claim you are standing in.
+**Aliases**: `co`
+**Arguments**: `[<option> <value>]`
 
-___
+获取/设置 您目前所处领地的配置。
+
+---
+
 #### `/gd option group`
-**Aliases**: `cog`  
-**Arguments**: `<group> [<option> <value>]`  
 
-Gets/Sets options for a group in claim you are standing in.
+**Aliases**: `cog`
+**Arguments**: `<group> [<option> <value>]`
 
-___
+获取/设置 您目前所处领地的一个组的配置。
+
+---
+
 #### `/gd option player`
-**Aliases**: `cop`  
-**Arguments**: `<player> [<option> <value>]`  
 
-Gets/Sets options for a player in claim you are standing in.
+**Aliases**: `cop`
+**Arguments**: `<player> [<option> <value>]`
 
+获取/设置 您目前所处领地的一个玩家的配置。
 
 ### Trust
-Note: `public` is for all users.
-___
+
+注意: `public` 指的是全体用户
+
+---
+
 #### `/gd trust player`
-*Accessor*: `Grants a player entry to your claim(s) and use of your bed`  
-*Container*: `Grants a player access to your claim's containers, crops, animals, bed, buttons, and levers`  
-*Builder*: `Grants a player edit access to your claim(s)`  
-*Manager*: `Grants a player access to all of the above including claim settings`  
-**Aliases**: `trust`  
-**Arguments**: `<player>|public <trusttype>`  
+
+*Accessor*: `Grants a player entry to your claim(s) and use of your bed`<br />*Container*: `Grants a player access to your claim's containers, crops, animals, bed, buttons, and levers`<br />*Builder*: `Grants a player edit access to your claim(s)`<br />*Manager*: `Grants a player access to all of the above including claim settings`<br />**Aliases**: `trust`<br />**Arguments**: `<player>|public <trusttype>`
 
 Grants a player access to your claim(s).
 
-___
+---
+
 #### `/gd trust group`
-*Accessor*: `Grants a group entry to your claim(s) and use of your bed`  
-*Container*: `Grants a group access to your claim's containers, crops, animals, bed, buttons, and levers`  
-*Builder*: `Grants a group edit access to your claim(s)`  
-*Manager*: `Grants a group access to all of the above including claim settings`  
-**Aliases**: `trustgroup`  
-**Arguments**: `<group>|public <trusttype>`  
+
+*Accessor*: `Grants a group entry to your claim(s) and use of your bed`
+*Container*: `Grants a group access to your claim's containers, crops, animals, bed, buttons, and levers`
+*Builder*: `Grants a group edit access to your claim(s)`
+*Manager*: `Grants a group access to all of the above including claim settings`
+**Aliases**: `trustgroup`
+**Arguments**: `<group>|public <trusttype>`
 
 Grants a group access to your claim(s)
 
-___
+---
+
 #### `/gd trustall player`
-*Accessor*: `Grants a player entry to ALL your claim(s) and use of your bed`  
-*Container*: `Grants a player access to ALL your claim's containers, crops, animals, bed, buttons, and levers`  
-*Builder*: `Grants a player edit access to ALL your claim(s)`  
+
+*Accessor*: `Grants a player entry to ALL your claim(s) and use of your bed`
+*Container*: `Grants a player access to ALL your claim's containers, crops, animals, bed, buttons, and levers`
+*Builder*: `Grants a player edit access to ALL your claim(s)`
 *Manager*: `Grants a player access to all of the above including claim settings`
-**Aliases**: `trust`  
-**Arguments**: `<player>|public <trusttype>`  
+**Aliases**: `trust`
+**Arguments**: `<player>|public <trusttype>`
 
 Grants a player access to ***ALL*** your claim(s).
 
-___
+---
+
 #### `/gd trustall group`
-*Accessor*: `Grants a group entry to ALL your claim(s) and use of your bed`  
-*Container*: `Grants a group access to ALL your claim's containers, crops, animals, bed, buttons, and levers`  
-*Builder*: `Grants a group edit access to ALL your claim(s)`  
+
+*Accessor*: `Grants a group entry to ALL your claim(s) and use of your bed`
+*Container*: `Grants a group access to ALL your claim's containers, crops, animals, bed, buttons, and levers`
+*Builder*: `Grants a group edit access to ALL your claim(s)`
 *Manager*: `Grants a group access to all of the above including claim settings`
-**Aliases**: `trustallgroup`  
-**Arguments**: `<group>|public <trusttype>`  
+**Aliases**: `trustallgroup`
+**Arguments**: `<group>|public <trusttype>`
 
 Grants a group access to ***ALL*** your claim(s).
 
-___
+---
+
 #### `/gd untrust player`
-**Aliases**: `untrust`  
-**Arguments**: `<player>|public`  
+
+**Aliases**: `untrust`
+**Arguments**: `<player>|public`
 
 Revokes a player's access to your claim.
 
-___
+---
+
 #### `/gd untrust group`
-**Aliases**: `untrustgroup`  
-**Arguments**: `<group>|public`  
+
+**Aliases**: `untrustgroup`
+**Arguments**: `<group>|public`
 
 Revokes a group's access to your claim.
 
-___
+---
+
 #### `/gd untrustall player`
-**Aliases**: `untrustall`  
-**Arguments**: `<player>|public`  
+
+**Aliases**: `untrustall`
+**Arguments**: `<player>|public`
 
 Revokes a player's access to ***ALL*** your claim(s).
 
-___
+---
+
 #### `/untrustall group`
-**Aliases**: `untrustallgroup`  
-**Arguments**: `<group>|public`  
+
+**Aliases**: `untrustallgroup`
+**Arguments**: `<group>|public`
 
 Revokes a group's access to ***ALL*** your claim(s).
-___
-#### `/gd trust list`
-Lists permissions for the claim you're standing in
 
+---
+
+#### `/gd trust list`
+
+Lists permissions for the claim you're standing in
 
 ### Admin
 
-___
-#### `/gd abandon world`  
-**Aliases**: `abandonworld`  
-**Arguments**: `[world]`  
+---
 
-Special admin command used to abandon ALL user claims in world.  
-___
-#### `/gd ban`  
-**Aliases**: `claimban`  
-**Arguments**: `hand | <type> <target> [<message>]`  
-Note: Valid types are `entity`, `item`, `block`  
-Bans target or item in hand from all usage.  
+#### `/gd abandon world`
 
-___
+**Aliases**: `abandonworld`
+**Arguments**: `[world]`
+
+Special admin command used to abandon ALL user claims in world.
+
+---
+
+#### `/gd ban`
+
+**Aliases**: `claimban`
+**Arguments**: `hand | <type> <target> [<message>]`
+Note: Valid types are `entity`, `item`, `block`
+Bans target or item in hand from all usage.
+
+---
+
 #### `/gd player adjustbonusblocks`
-**Aliases**: `adjustbonusblocks`  
-**Arguments**: `<player> <amount> [world]`  
+
+**Aliases**: `adjustbonusblocks`
+**Arguments**: `<player> <amount> [world]`
 
 Adds or subtracts bonus claim blocks for a player
 
-___
+---
+
 #### `/gd player setaccruedblocks`
-**Aliases**: `setaccruedblocks`  
-**Arguments**: `<player> <amount> [<world>]`  
+
+**Aliases**: `setaccruedblocks`
+**Arguments**: `<player> <amount> [<world>]`
 
 Updates a player's accrued claim block total.
 
-___
+---
+
 #### `/gd mode admin`
-**Aliases**: `modeadmin`  
+
+**Aliases**: `modeadmin`
 
 Switches the shovel tool to administrative claims mode
 
-___
+---
+
 #### `/gd delete claim`
-**Aliases**: `deleteclaim`  
+
+**Aliases**: `deleteclaim`
 
 Deletes the claim you're standing in, even if it's not your claim
 
-___
+---
+
 #### `/gd delete all`
-**Aliases**: `deleteall`  
-**Arguments**: `<player> [world]`  
+
+**Aliases**: `deleteall`
+**Arguments**: `<player> [world]`
 
 Delete all of another player's claims
 
-___
+---
+
 #### `/gd delete alladmin`
-**Aliases**: `deletealladmin`  
-**Arguments**: `[world]`  
+
+**Aliases**: `deletealladmin`
+**Arguments**: `[world]`
 
 Deletes all administrative claims
 
-___
+---
+
 #### `/gd claim ignore`
-**Aliases**: `ignoreclaims`  
+
+**Aliases**: `ignoreclaims`
 
 Toggles ignore claims mode
 
-___
+---
+
 #### `/gd claim clear`
-**Aliases**: `claimclear`  
-**Arguments**: `<target> [<claim> [<world>]]`  
+
+**Aliases**: `claimclear`
+**Arguments**: `<target> [<claim> [<world>]]`
 Allows clearing of entities within one or more claims.
 
-___
+---
+
 #### `/gd permission group`
-**Aliases**: `cpg`  
-**Arguments**: `<group> [<permission> <value>]`  
+
+**Aliases**: `cpg`
+**Arguments**: `<group> [<permission> <value>]`
 
 Sets a permission on a group with a claim context
 
-___
+---
+
 #### `/gd permission player`
-**Aliases**: `cpp`  
-**Arguments**: `<player> [<permission> <value>]`  
+
+**Aliases**: `cpp`
+**Arguments**: `<player> [<permission> <value>]`
 
 Sets a permission on a player with a claim context
 
-___
+---
+
 #### `/gd mode nature`
-**Aliases**: `rn`  
+
+**Aliases**: `rn`
 
 Switches the shovel tool to restoration mode
 
-___
+---
+
 #### `/gd debug`
-**Aliases**: `gddebug`  
-**Arguments**: `<on>|<off>|<record>|<paste> [<player>]`  
+
+**Aliases**: `gddebug`
+**Arguments**: `<on>|<off>|<record>|<paste> [<player>]`
 
 Toggles debug
 
-___
+---
+
 #### `/gd reload`
 
 Reloads Grief Prevention's configuration settings
 
-___
-#### `/gd schematic`  
-**Aliases**: `claimschematic`  
-**Arguments**: `<create|delete> <name>`  
+---
 
-Manages claim schematics. Use '/claimschematic create <name>' to create a live backup of claim. 
+#### `/gd schematic`
 
-___
-#### `/gd unban`  
-**Aliases**: `claimunban`  
-**Arguments**: `hand | <type> <target> [<message>]`  
-Note: Valid types are `entity`, `item`, `block`  
+**Aliases**: `claimschematic`
+**Arguments**: `<create|delete> <name>`
 
-Unbans target id allowing it to be used again. 
+Manages claim schematics. Use '/claimschematic create <name>' to create a live backup of claim.
 
+---
+
+#### `/gd unban`
+
+**Aliases**: `claimunban`
+**Arguments**: `hand | <type> <target> [<message>]`
+Note: Valid types are `entity`, `item`, `block`
+
+Unbans target id allowing it to be used again.
 
 ### Misc
 
-___
+---
+
 #### `/gd`
 
 Lists detailed information on each command.
 
-___
+---
+
 #### `/gd version`
 
 Lists version information.
