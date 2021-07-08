@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pixelmon | GriefDefender</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="./assets/logo.png">
+    <meta name="description" content="Powerful Claim Plugin.">
+    <link rel="preload" href="./assets/css/0.styles.9fc8c1e1.css" as="style"><link rel="preload" href="./assets/js/app.06305fc6.js" as="script"><link rel="preload" href="./assets/js/3.51bd6189.js" as="script"><link rel="preload" href="./assets/js/12.7caec2df.js" as="script"><link rel="prefetch" href="./assets/js/10.287015dc.js"><link rel="prefetch" href="./assets/js/11.01fe6524.js"><link rel="prefetch" href="./assets/js/13.b065e9a7.js"><link rel="prefetch" href="./assets/js/14.5d553759.js"><link rel="prefetch" href="./assets/js/15.ade1f75d.js"><link rel="prefetch" href="./assets/js/16.7c3fdfad.js"><link rel="prefetch" href="./assets/js/17.0acd79b1.js"><link rel="prefetch" href="./assets/js/18.e01a6390.js"><link rel="prefetch" href="./assets/js/19.bd255687.js"><link rel="prefetch" href="./assets/js/20.6278c904.js"><link rel="prefetch" href="./assets/js/21.b18a2c60.js"><link rel="prefetch" href="./assets/js/22.a12e3baa.js"><link rel="prefetch" href="./assets/js/23.e9ae41f0.js"><link rel="prefetch" href="./assets/js/24.3543627f.js"><link rel="prefetch" href="./assets/js/25.90e9bc52.js"><link rel="prefetch" href="./assets/js/26.0019e318.js"><link rel="prefetch" href="./assets/js/27.1ff075f2.js"><link rel="prefetch" href="./assets/js/28.2499512d.js"><link rel="prefetch" href="./assets/js/29.56750f65.js"><link rel="prefetch" href="./assets/js/30.317e8612.js"><link rel="prefetch" href="./assets/js/31.7d75da97.js"><link rel="prefetch" href="./assets/js/32.20befd80.js"><link rel="prefetch" href="./assets/js/33.8333fb7f.js"><link rel="prefetch" href="./assets/js/34.592eedba.js"><link rel="prefetch" href="./assets/js/35.034c8b3c.js"><link rel="prefetch" href="./assets/js/36.69dbaf30.js"><link rel="prefetch" href="./assets/js/37.e4aa6d9f.js"><link rel="prefetch" href="./assets/js/38.9c05dad0.js"><link rel="prefetch" href="./assets/js/39.6ba6e899.js"><link rel="prefetch" href="./assets/js/4.1efddbf4.js"><link rel="prefetch" href="./assets/js/40.59046d35.js"><link rel="prefetch" href="./assets/js/41.93e279e7.js"><link rel="prefetch" href="./assets/js/42.f643fc1d.js"><link rel="prefetch" href="./assets/js/43.414c2e23.js"><link rel="prefetch" href="./assets/js/44.37ef713b.js"><link rel="prefetch" href="./assets/js/45.91c324ae.js"><link rel="prefetch" href="./assets/js/46.68081851.js"><link rel="prefetch" href="./assets/js/47.f2ae22d3.js"><link rel="prefetch" href="./assets/js/48.28ea3437.js"><link rel="prefetch" href="./assets/js/49.d6c9e2ad.js"><link rel="prefetch" href="./assets/js/5.435dcd8e.js"><link rel="prefetch" href="./assets/js/50.c5c95d36.js"><link rel="prefetch" href="./assets/js/51.a9346d24.js"><link rel="prefetch" href="./assets/js/52.d0331e29.js"><link rel="prefetch" href="./assets/js/53.1ca61bea.js"><link rel="prefetch" href="./assets/js/54.514203ba.js"><link rel="prefetch" href="./assets/js/55.e8475291.js"><link rel="prefetch" href="./assets/js/56.1d99a767.js"><link rel="prefetch" href="./assets/js/57.df354faa.js"><link rel="prefetch" href="./assets/js/58.f874662f.js"><link rel="prefetch" href="./assets/js/59.48fdbfb4.js"><link rel="prefetch" href="./assets/js/6.cd88e1e7.js"><link rel="prefetch" href="./assets/js/7.b2ed08f8.js"><link rel="prefetch" href="./assets/js/8.8d2e890a.js"><link rel="prefetch" href="./assets/js/9.1d68a89f.js"><link rel="prefetch" href="./assets/js/vendors~docsearch.6078ecf6.js">
+    <link rel="stylesheet" href="./assets/css/0.styles.9fc8c1e1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="ant-row"><div class="nav-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/./" class="router-link-active no-logo home-link"><!----> <span class="site-name">GriefDefender</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/./" class="router-link-active">
+          Home
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/./wiki/">
+          Wiki
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/./hook/">
+          Hooks
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/./api/">
+          API
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/./resource/" class="router-link-active">
+          Resources
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          Support
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-submenu-selected"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>
+          Languages
+        </span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <a href="https://github.com/bloodmc/GriefDefenderDoc" target="_blank" rel="noopener noreferrer" class="repo-link"><i aria-label="icon: github" class="anticon anticon-github"><svg viewBox="64 64 896 896" focusable="false" data-icon="github" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg></i></a></nav></div></div> <!----></header> <!----> <main class="page"> <div class="theme-antdocs-content content__default"><h1 id="unlike-gp-where-you-had-to-set-multiple-flag-commands-for-pixelmon-manually-it-is-now-highly-recommended-to-make-use-of-the-new-flag-definition-system-a-flag-definition-combines-1-or-more-flag-permissions-into-a-single-group-which-allows-you-to-toggle-all-at-once-via-gui-any-flag-definition-entered-in-your-flags-conf-will-be-accessible-via-the-flag-gui-config-by-using-cf-command-in-game-the-main-thing-to-keep-in-mind-is-all-flags-toggled-in-game-will-apply-to-claim-only-however-the-flags-you-set-in-config-that-use-gd-claim-default-or-gd-claim-override-contexts-will-be-applied-on-server-startup-with-the-default-value-you-specify"><a href="#unlike-gp-where-you-had-to-set-multiple-flag-commands-for-pixelmon-manually-it-is-now-highly-recommended-to-make-use-of-the-new-flag-definition-system-a-flag-definition-combines-1-or-more-flag-permissions-into-a-single-group-which-allows-you-to-toggle-all-at-once-via-gui-any-flag-definition-entered-in-your-flags-conf-will-be-accessible-via-the-flag-gui-config-by-using-cf-command-in-game-the-main-thing-to-keep-in-mind-is-all-flags-toggled-in-game-will-apply-to-claim-only-however-the-flags-you-set-in-config-that-use-gd-claim-default-or-gd-claim-override-contexts-will-be-applied-on-server-startup-with-the-default-value-you-specify" class="header-anchor">#</a> Unlike GP where you had to set multiple flag commands for pixelmon manually, it is now highly recommended to make use of the new Flag Definition system. A flag definition combines 1 or more flag permissions into a single group which allows you to toggle all at once via GUI. Any flag definition entered in your <code>flags.conf</code> will be accessible via the Flag GUI config by using <code>/cf</code> command in game. The main thing to keep in mind is all flags toggled in game will apply to claim only. However, the flags you set in config that use <code>gd_claim_default</code> or <code>gd_claim_override</code> contexts will be applied on server startup with the <code>default-value</code> you specify.</h1> <p>Below is a modified <code>flags.conf</code> file that contains custom flag definitions created by user <code>Eoraptor</code>. They can be used as a template to add custom pixemon flags for your server.</p> <p>To use, paste the below config text over your original <code>flags.conf</code> which can be found in the GD config folder.</p> <details><summary>Pixelmon Flag Config (GD 1.5.11)</summary> <div class="language- extra-class"><pre class="language-text"><code>GriefDefender {
+    # Used to define a group of custom flags for players/admins.
+    # Each group defined will be displayed in the flag GUI for users.
+    # Groups can have the following settings : 
+    #    enabled=&lt;true|false&gt;: Whether the group is enabled.
+    #    admin-group=&lt;true|false&gt;: Whether this group is considered for admin use only.
+    #    Note: GUI toggles in admin groups will always use configured definition contexts.
+    #          However, non-admin groups, such as 'user', will always apply to current claim only.
+    #    Note: If you assign users the permission 'griefdefender.admin.advanced-flags', they will be able to access admin presets within the claim tab.
+    #          It is recommended not to assign this permission to users for best experience.
+    #    hover=&lt;text&gt;: The hover text to be displayed when hovering over group name in GUI.
+    #    title=&lt;text&gt;: The title text to be used for TAB display.
+    #    value=&lt;true|false&gt;: This is used to set a default value for the flag definition. It is only used in conjunction with 'override=&lt;type&gt;, default=&lt;type&gt; settings.
+    #    contexts=[&quot;key=value&quot;]: A list of definition contexts that will be applied to all permissions.
+    # Note: This is primary used with 'default' and 'override' contexts. Ex. contexts=[&quot;default=global&quot;]
+    # Note: You must specify one of the following contexts :'gd_claim_default=&lt;type&gt;' , 'gd_claim_override=&lt;type&gt;', or 'gd_claim=claim'
+    # Each group will have an associated permission in order to be viewable.
+    # The 'user' group will use the permission : 'griefdefender.custom.flag.group.user'
+    # The 'admin' group will use the permission : 'griefdefender.custom.flag.group.admin'
+    # Within each group, you can define flag definitions.
+    # Each flag definition must be defined in the following format:
+    # enabled: Controls whether the definition is enabled. Accepts a value of 'true' or 'false'
+    # default-value: The default value to assign flag definition.
+    # description: The flag description to display on hover. Uses the legacy text format.
+    # permissions: The list of permissions to link to definition. Each permission accepts the following contexts :
+    #    flag=&lt;linked-flag&gt;: This context is used to link the permission to a GD specific flag. Ex. 'flag=block-break' would link permission to GD's block-break flag
+    #    source=&lt;id&gt;: This context is used to specify a source id such as 'minecraft:creeper'.
+    #    target=&lt;id&gt;: This context is used to specify a target id such as 'minecraft:chest'.
+    #    state=&lt;properties&gt;: This context is used to specify a blockstate property such as 'state=lit:true'.
+    # Note: All flag definitions that contain a definition context of 'gd_claim_default' or 'gd_claim_override' will be applied to permissions during server startup.
+    # Note: Required if no source or target context is specified, the permission will default to ALL.
+    # Note: Available contexts are : flag, source, target, state, used_item, item_name
+    # These contexts may change, See https://github.com/bloodmc/GriefDefender/wiki for latest information.
+    custom-flags {
+        groups {
+            admin {
+                # Set to true if this flag group is for admin use only.
+                # Note: If admin group, the permission is 'griefdefender.admin.custom.flag.&lt;groupname&gt;
+                # Note: If user group (admin set false), the permission is 'griefdefender.user.custom.flag.&lt;groupname&gt;
+                admin-group=true
+                definitions {
+                    ambient-spawn {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether ambients, such as bats, can spawn.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-spawn, target=#ambient&quot;
+                        ]
+                    }
+                    animal-block-modify {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether animals can modify blocks.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-modify, source=#animal&quot;
+                        ]
+                    }
+                    animal-spawn {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether animals, such as cows and pigs, can spawn.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-spawn, target=#animal&quot;
+                        ]
+                    }
+                    aquatic-spawn {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether aquatics, such as squids and guardians, can spawn.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-spawn, target=#aquatic&quot;
+                        ]
+                    }
+                    armorstand-use {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether armorstands can be placed or broken.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-item-secondary, target=minecraft:armor_stand, source=minecraft:player&quot;,
+                            &quot;flag=entity-damage, target=minecraft:armor_stand, source=minecraft:player&quot;,
+                            &quot;flag=interact-entity-secondary, target=minecraft:armor_stand, source=minecraft:player&quot;
+                        ]
+                    }
+                    chorus-fruit-teleport {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether a player can use chorus fruit to teleport.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-item-secondary, target=minecraft:chorus_fruit, source=minecraft:player&quot;
+                        ]
+                    }
+                    commandblock-block-break {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:command_block, source=minecraft:chain_command_block, source=minecraft:repeating_command_block&quot;
+                        ]
+                    }
+                    commandblock-block-place {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-place, source=minecraft:command_block, source=minecraft:chain_command_block, source=minecraft:repeating_command_block&quot;
+                        ]
+                    }
+                    creeper-block-explosion {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether a creeper can explode blocks.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=explosion-block, source=minecraft:creeper&quot;
+                        ]
+                    }
+                    creeper-entity-explosion {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether a creeper can explode entities.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=explosion-entity, source=minecraft:creeper&quot;
+                        ]
+                    }
+                    endcrystal-use {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether endcrystals can be placed or broken.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-item-secondary, target=minecraft:end_crystal, source=minecraft:player&quot;,
+                            &quot;flag=entity-damage, target=minecraft:end_crystal, source=minecraft:player&quot;,
+                            &quot;flag=interact-entity-secondary, target=minecraft:end_crystal, source=minecraft:player&quot;
+                        ]
+                    }
+                    entity-armorstand-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether entities can deal damage to armorstands.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, target=minecraft:armor_stand&quot;,
+                            &quot;flag=projectile-impact-entity, target=minecraft:armor_stand&quot;
+                        ]
+                    }
+                    entity-itemframe-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether entities can deal damage to item frames.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, target=minecraft:item_frame&quot;,
+                            &quot;flag=projectile-impact-entity, target=minecraft:item_frame&quot;
+                        ]
+                    }
+                    exp-drop {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether experience orbs can drop.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-spawn, target=minecraft:xp_orb&quot;
+                        ]
+                    }
+                    fall-entity-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether entities can take fall damage.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, source=minecraft:fall&quot;
+                        ]
+                    }
+                    fall-player-damage {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can take fall damage.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, target=minecraft:player, source=minecraft:fall&quot;
+                        ]
+                    }
+                    falling-block-break {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether falling blocks can break.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:fall&quot;
+                        ]
+                    }
+                    fire-block-damage {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether fire can cause block damage.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:fire&quot;
+                        ]
+                    }
+                    fire-entity-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether fire can cause entity damage.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, source=minecraft:fire&quot;,
+                            &quot;flag=entity-damage, source=minecraft:fire_tick&quot;,
+                            &quot;flag=entity-damage, source=minecraft:magma_block&quot;,
+                            &quot;flag=entity-damage, source=minecraft:flowing_lava&quot;
+                        ]
+                    }
+                    lightning-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether lightning can cause harm.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, source=minecraft:lightning_bolt&quot;
+                        ]
+                    }
+                    monster-animal-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether monsters can deal damage to animals.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, source=#monster, target=#animal&quot;,
+                            &quot;flag=entity-damage, source=#monster, target=#aquatic&quot;,
+                            &quot;flag=projectile-impact-entity, source=#monster, target=#aquatic&quot;
+                        ]
+                    }
+                    monster-player-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether monsters can deal damage to players.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, source=#monster, target=minecraft:player&quot;,
+                            &quot;flag=projectile-impact-entity, source=#monster, target=minecraft:player&quot;
+                        ]
+                    }
+                    monster-spawn {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether monsters, such as creepers and skeletons, can spawn.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-spawn, target=#monster&quot;
+                        ]
+                    }
+                    piston-item-spawn {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether pistons can spawn items.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=item-spawn, source=minecraft:piston&quot;,
+                            &quot;flag=item-spawn, source=minecraft:sticky_piston&quot;
+                        ]
+                    }
+                    piston-use {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether pistons can be used.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:piston&quot;,
+                            &quot;flag=block-place, source=minecraft:piston&quot;,
+                            &quot;flag=block-break, source=minecraft:sticky_piston&quot;,
+                            &quot;flag=block-place, source=minecraft:sticky_piston&quot;
+                        ]
+                    }
+                    player-block-break {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can break blocks.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-block-interact {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can interact with blocks.\n&amp;bNote&amp;f: This does not include inventory blocks such as chests.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-block-place {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can place blocks.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-place, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can be damaged.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, target=minecraft:player&quot;,
+                            &quot;flag=projectile-impact-entity, target=minecraft:player&quot;
+                        ]
+                    }
+                    player-enderpearl-interact {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use an enderpearl.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-item-secondary, source=minecraft:player, target=minecraft:ender_pearl&quot;
+                        ]
+                    }
+                    player-endportal-use {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use end portal.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-teleport-from, source=minecraft:end_portal, target=minecraft:player&quot;
+                        ]
+                    }
+                    player-enter {
+                        contexts=[
+                            &quot;gd_claim=claim&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether a player can enter this claim.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=enter-claim, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-entity-interact {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with entities.\n&amp;bNote&amp;f: This does not include chest access with entities such as horses.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-exit {
+                        contexts=[
+                            &quot;gd_claim=claim&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether a player can exit this claim.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=exit-claim, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-item-drop {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can drop items.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=item-drop, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-item-pickup {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can pickup items.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=item-pickup, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-itemframe-interact {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can interact with item frames.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=minecraft:item_frame, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-itemhanging-place {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can place hanging items such as itemframes.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-item-secondary, target=#hanging, source=minecraft:player&quot;
+                        ]
+                    }
+                    player-netherportal-use {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use nether portal.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-teleport-from, source=minecraft:nether_portal, target=minecraft:player&quot;
+                        ]
+                    }
+                    player-teleport-from {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can teleport from this claim.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-teleport-from, target=minecraft:player&quot;
+                        ]
+                    }
+                    player-teleport-to {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can teleport to this claim.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-teleport-to, target=minecraft:player&quot;
+                        ]
+                    }
+                    player-villager-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can deal damage to villagers.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, target=minecraft:villager, source=minecraft:player&quot;,
+                            &quot;flag=projectile-impact-entity, target=minecraft:villager, source=minecraft:player&quot;
+                        ]
+                    }
+                    silverfish-block-infest {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether silverfish can infest blocks such as cobblestone.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-modify, source=minecraft:silverfish&quot;
+                        ]
+                    }
+                    tnt-block-explosion {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether tnt can explode blocks.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=explosion-block, source=minecraft:tnt&quot;
+                        ]
+                    }
+                    tnt-entity-explosion {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether tnt can explode entities.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=explosion-entity, source=minecraft:tnt&quot;
+                        ]
+                    }
+                    turtle-egg-hatch {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether turtle eggs can hatch.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:turtle_egg, target=minecraft:turtle_egg&quot;
+                        ]
+                    }
+                    villager-farm {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether villages can farm crops.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:villager, target=#crops&quot;,
+                            &quot;flag=block-place, source=minecraft:villager, target=#crops&quot;
+                        ]
+                    }
+                    wither-block-break {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether withers can break blocks.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:wither&quot;
+                        ]
+                    }
+                    wither-entity-damage {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether withers can damage entities.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, source=minecraft:wither&quot;
+                        ]
+                    }
+                }
+                # Whether flag definition group is enabled.
+                enabled=true
+                # The hover text to be displayed when hovering over group name in GUI.
+                hover=&quot;&quot;
+                # The title text to be used for TAB display.
+                title=&quot;&quot;
+            }
+            pixelmon {
+                # Set to true if this flag group is for admin use only.
+                # Note: If admin group, the permission is 'griefdefender.admin.custom.flag.&lt;groupname&gt;
+                # Note: If user group (admin set false), the permission is 'griefdefender.user.custom.flag.&lt;groupname&gt;
+                admin-group=false
+                definitions {
+                    collide-pixelmon-grass {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players are forced into battle in Pixelmon grass&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=collide-block, target=pixelmon:pixelmon_grass, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-chattingnpc {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with NPC's that Chat&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=pixelmon:chattingnpc, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-endtable {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can use the End Table&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, source=minecraft:player, target=pixelmon:end_table&quot;,
+                            &quot;flag=interact-inventory, source=minecraft:player, target=pixelmon:end_table&quot;
+                        ]
+                    }
+                    interact-with-fridge {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether players can use the Fridge&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:fridge, source=minecraft:player&quot;,
+                            &quot;flag=interact-inventory, target=pixelmon:fridge, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-healer {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use the Healer&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:healer, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-move-relearner {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with Move Relearners&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=pixelmon:relearner, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-move-tutor {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with Move Tutors&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=pixelmon:tutor, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-nurses {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with Nurses&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=pixelmon:nursejoy, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-old-fisherman {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with Old Fisherman&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=pixelmon:oldfisherman, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-shopkeepers {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with Shopkeepers&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=pixelmon:shopkeeper, source=minecraft:player&quot;
+                        ]
+                    }
+                    interact-with-traders {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can interact with Traders&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=pixelmon:trader, source=minecraft:player&quot;
+                        ]
+                    }
+                    occupied-pokeball-usage {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether occupied pokeballs can be thrown or not&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=projectile-impact-block, source=pixelmon:occupied_pokeball&quot;,
+                            &quot;flag=projectile-impact-entity, source=pixelmon:occupied_pokeball, target=pixelmon:any&quot;,
+                            &quot;flag=entity-spawn, source=pixelmon:occupied_pokeball, target=#pixelmon:animal&quot;
+                        ]
+                    }
+                    poke-spawn {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether Pokemon can spawn(NPC Pokemon will be invisible during battles if false)&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-spawn, target=#pixelmon:animal&quot;
+                        ]
+                    }
+                    throw-any-pokeball {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether empty pokeballs can be thrown or not&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=projectile-impact-block, source=pixelmon:empty_pokeball&quot;,
+                            &quot;flag=projectile-impact-entity, source=pixelmon:empty_pokeball&quot;
+                        ]
+                    }
+                    use-cushion-chairs {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use cushion chairs&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:red_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:yellow_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:green_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:pink_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:blue_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:black_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:gray_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:cyan_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:white_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:brown_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:orange_cushion_chair, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:purple_cushion_chair, source=minecraft:player&quot;
+                        ]
+                    }
+                    use-fossil-cleaner {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use Fossil Cleaners&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:fossil_cleaner, source=minecraft:player&quot;
+                        ]
+                    }
+                    use-fossil-machines {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use Fossile Machines&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:fossil_machine, source=minecraft:player&quot;
+                        ]
+                    }
+                    use-pc {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use Pokemon PC's&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:pc, source=minecraft:player&quot;
+                        ]
+                    }
+                    use-trade-machines {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use Trading Machines&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:trade_machine, source=minecraft:player&quot;
+                        ]
+                    }
+                    use-vending-machines {
+                        contexts=[
+                            &quot;gd_claim_default=global&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can use Vending Machines&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=pixelmon:pink_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:blue_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:green_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:orange_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:red_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:yellow_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, source=minecraft:player, target=pixelmon:brown_vending_machine&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:white_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:gray_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:black_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:cyan_vending_machine, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=pixelmon:purple_vending_machine, source=minecraft:player&quot;
+                        ]
+                    }
+                }
+                # Whether flag definition group is enabled.
+                enabled=true
+                # The hover text to be displayed when hovering over group name in GUI.
+                hover=&quot;&quot;
+                # The title text to be used for TAB display.
+                title=&quot;&quot;
+            }
+            user {
+                # Set to true if this flag group is for admin use only.
+                # Note: If admin group, the permission is 'griefdefender.admin.custom.flag.&lt;groupname&gt;
+                # Note: If user group (admin set false), the permission is 'griefdefender.user.custom.flag.&lt;groupname&gt;
+                admin-group=false
+                definitions {
+                    block-trampling {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether farmland and turtle eggs can be trampled.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=collide-block, target=minecraft:turtle_egg, target=minecraft:farmland&quot;
+                        ]
+                    }
+                    chest-access {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether a player can access chest inventories.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=minecraft:chest, source=minecraft:player&quot;,
+                            &quot;flag=interact-inventory, target=minecraft:chest, source=minecraft:player&quot;
+                        ]
+                    }
+                    crop-growth {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether crops can grow.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-grow, target=#crops&quot;
+                        ]
+                    }
+                    damage-animals {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether animals can be damaged.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, target=#animal&quot;,
+                            &quot;flag=projectile-impact-entity, target=#animal&quot;
+                        ]
+                    }
+                    enderman-grief {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether enderman can grief.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:enderman&quot;,
+                            &quot;flag=block-place, source=minecraft:enderman&quot;
+                        ]
+                    }
+                    fire-spread {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether fire can spread.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-spread, source=minecraft:fire&quot;,
+                            &quot;flag=block-spread, source=minecraft:flowing_lava&quot;
+                        ]
+                    }
+                    grass-growth {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether grass can grow.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-grow, target=minecraft:grass&quot;
+                        ]
+                    }
+                    ice-form {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether ice can form.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-modify, target=minecraft:ice&quot;
+                        ]
+                    }
+                    ice-melt {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether ice can melt.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-modify, target=minecraft:water, source=minecraft:ice&quot;
+                        ]
+                    }
+                    lava-flow {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether lava can flow.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=liquid-flow, source=minecraft:flowing_lava, target=minecraft:air&quot;
+                        ]
+                    }
+                    leaf-decay {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether leaves can decay.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=leaf-decay&quot;
+                        ]
+                    }
+                    lighter {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether a player can use flint and steel.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-item-secondary, target=minecraft:flint_and_steel, source=minecraft:player&quot;
+                        ]
+                    }
+                    mushroom-growth {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether mushrooms can grow.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-grow, target=#mushroom&quot;
+                        ]
+                    }
+                    mycelium-spread {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether mycelium can spread.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-spread, target=minecraft:mycelium&quot;
+                        ]
+                    }
+                    pvp {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether PvP combat is allowed.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-damage, target=minecraft:player, source=minecraft:player&quot;,
+                            &quot;flag=projectile-impact-entity, target=minecraft:player, source=minecraft:player&quot;
+                        ]
+                    }
+                    ride {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether vehicles(including animals) can be mounted.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=entity-riding, target=#vehicle, source=minecraft:player&quot;,
+                            &quot;flag=interact-entity-secondary, target=#vehicle, source=minecraft:player&quot;
+                        ]
+                    }
+                    sign-use {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-primary, target=#signs, source=minecraft:player&quot;,
+                            &quot;flag=interact-block-secondary, target=#signs, source=minecraft:player&quot;
+                        ]
+                    }
+                    sleep {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can sleep in beds.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-block-secondary, target=minecraft:bed, source=minecraft:player&quot;,
+                            &quot;flag=interact-item-secondary, target=minecraft:bed, source=minecraft:player&quot;
+                        ]
+                    }
+                    snow-fall {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether snow can fall.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-place, source=minecraft:air, target=minecraft:snow_layer&quot;
+                        ]
+                    }
+                    snow-melt {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether snow can melt.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-break, source=minecraft:snow_layer&quot;
+                        ]
+                    }
+                    snowman-trail {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether snowmen can create snow beneath them.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-place, source=minecraft:snowman, target=minecraft:snow&quot;
+                        ]
+                    }
+                    soil-dry {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether soil will dry.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-modify, source=minecraft:farmland, state=moisture:0&quot;
+                        ]
+                    }
+                    vehicle-use {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether vehicles(boats, minecarts, etc.) can be placed, ridden and broken.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-item-secondary, target=#vehicle, source=minecraft:player&quot;,
+                            &quot;flag=entity-damage, target=#vehicle, source=minecraft:player&quot;,
+                            &quot;flag=entity-riding, target=#vehicle, source=minecraft:player&quot;,
+                            &quot;flag=interact-entity-secondary, target=#vehicle, source=minecraft:player&quot;
+                        ]
+                    }
+                    villager-trade {
+                        contexts=[
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether players can trade with villagers.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=interact-entity-secondary, target=minecraft:villager, source=minecraft:player&quot;
+                        ]
+                    }
+                    vine-growth {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=true
+                        description=&quot;Controls whether vines(and kelp) can grow.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=block-grow, target=minecraft:vine&quot;
+                        ]
+                    }
+                    water-flow {
+                        contexts=[
+                            &quot;gd_claim_override=claim&quot;,
+                            &quot;gd_claim_default=user&quot;
+                        ]
+                        default-value=false
+                        description=&quot;Controls whether water can flow.&quot;
+                        enabled=true
+                        permissions=[
+                            &quot;flag=liquid-flow, target=minecraft:air, source=minecraft:flowing_water&quot;
+                        ]
+                    }
+                }
+                # Whether flag definition group is enabled.
+                enabled=true
+                # The hover text to be displayed when hovering over group name in GUI.
+                hover=&quot;&quot;
+                # The title text to be used for TAB display.
+                title=&quot;&quot;
+            }
+        }
+    }
+    default-flags {
+        # The default flag settings used by claims. The group name represents the claim type.
+        # Ex: The group admin will ONLY affect admin claims.
+        # Supported groups are : user, admin, basic, subdivision, town, and wilderness.
+        # Note: User represents all claim types EXCEPT wilderness.
+        # Note: Specific types, such as wilderness, have higher priority than user.
+        # Note: Defaults do not force flags onto user claims. A newly created claim will have no flags set and use these default settings until a claim owner sets flags.
+        default-claim-flags {
+            user {
+                block-break=false
+                block-grow=true
+                block-modify=false
+                block-place=false
+                block-spread=true
+                collide-block=false
+                collide-entity=false
+                command-execute=true
+                command-execute-pvp=true
+                enter-claim=true
+                entity-chunk-spawn=true
+                entity-damage=true
+                entity-riding=true
+                entity-spawn=true
+                entity-teleport-from=true
+                entity-teleport-to=true
+                exit-claim=true
+                explosion-block=false
+                explosion-entity=false
+                interact-block-primary=false
+                interact-block-secondary=false
+                interact-entity-primary=false
+                interact-entity-secondary=true
+                interact-inventory=false
+                interact-inventory-click=true
+                interact-item-primary=true
+                interact-item-secondary=true
+                inventory-item-move=true
+                item-drop=true
+                item-pickup=true
+                item-spawn=true
+                item-use=true
+                leaf-decay=true
+                liquid-flow=false
+                portal-use=true
+                projectile-impact-block=false
+                projectile-impact-entity=true
+            }
+            wilderness {
+                block-break=true
+                block-grow=true
+                block-modify=true
+                block-place=true
+                block-spread=true
+                collide-block=true
+                collide-entity=true
+                command-execute=true
+                command-execute-pvp=true
+                enter-claim=true
+                entity-chunk-spawn=true
+                entity-damage=true
+                entity-riding=true
+                entity-spawn=true
+                entity-teleport-from=true
+                entity-teleport-to=true
+                exit-claim=true
+                explosion-block=true
+                explosion-entity=true
+                interact-block-primary=true
+                interact-block-secondary=true
+                interact-entity-primary=true
+                interact-entity-secondary=true
+                interact-inventory=true
+                interact-inventory-click=true
+                interact-item-primary=true
+                interact-item-secondary=true
+                inventory-item-move=true
+                item-drop=true
+                item-pickup=true
+                item-spawn=true
+                item-use=true
+                leaf-decay=true
+                liquid-flow=true
+                portal-use=true
+                projectile-impact-block=true
+                projectile-impact-entity=true
+            }
+        }
+    }
+    # Controls which flags are enabled.
+    # Note: Disabling a flag will cause GD to bypass all functionality for it.
+    # Note: If you want full protection, it is recommended to keep everything enabled.
+    flag-control {
+        block-break=true
+        block-grow=true
+        block-modify=true
+        block-place=true
+        block-spread=true
+        collide-block=true
+        collide-entity=true
+        command-execute=true
+        command-execute-pvp=true
+        enter-claim=true
+        entity-chunk-spawn=false
+        entity-damage=true
+        entity-riding=true
+        entity-spawn=true
+        entity-teleport-from=true
+        entity-teleport-to=true
+        exit-claim=true
+        explosion-block=true
+        explosion-entity=true
+        interact-block-primary=true
+        interact-block-secondary=true
+        interact-entity-primary=true
+        interact-entity-secondary=true
+        interact-inventory=true
+        interact-inventory-click=true
+        interact-item-primary=true
+        interact-item-secondary=true
+        inventory-item-move=true
+        item-drop=true
+        item-pickup=true
+        item-spawn=true
+        item-use=true
+        leaf-decay=true
+        liquid-flow=true
+        portal-use=false
+        projectile-impact-block=true
+        projectile-impact-entity=true
+    }
+}
+</code></pre></div></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/8/2021, 1:29:24 PM</span></div></footer> <!----> </main> <!----></div><div class="global-ui"></div></div>
+    <script src="./assets/js/app.06305fc6.js" defer></script><script src="./assets/js/3.51bd6189.js" defer></script><script src="./assets/js/12.7caec2df.js" defer></script>
+  </body>
+</html>
