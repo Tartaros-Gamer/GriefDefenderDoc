@@ -1,7 +1,7 @@
 module.exports = {
 	'/': {
       lang: 'en-US',
-      title: 'griefDefender',
+      title: 'GriefDefender',
       description: 'Powerful Claim Plugin.'
     },
     '/zh_CN/': {
