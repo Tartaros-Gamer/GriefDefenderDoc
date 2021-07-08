@@ -17,23 +17,23 @@ What's more, This Document originally support **multi-language**(No Google Trans
 _**Each MarkDown files should have these front matter: https://vuepress.vuejs.org/guide/frontmatter.html**_
 
 File Structure
->     docs
->     ├─ README.md (Home)
->     ├─ example.md (Show some editing skills)
-               ├─ locales.js (tell doc how to handle translation file)
-               ├─ .vuepress (tell doc how to render and generate static html file)
-               │          ├─ styles (Set Text,Backguard,Layout etc.)
-               │          ├─ public (Store some public assets like pictures)
-               │           ├─ config (default settings when Translation do not work correctly)
-               │            └─ config.js (General setting)
-               ├─ Translation 
-               │         ├─ translations.js (tranlate some fragmentary words/manage sidebar)
-               │         └─ zh.js (translated words)
->     ├─ wiki
->     │  ├─ sidebar_contents.js (Order Side Bar)
-               |   └─ .… (Wiki Pages)
->     └─ zh_CN
->        ├─ README.md (Translated Home)
->        └─ wiki
->           ├─ sidebar_contents.js (Order Translated Side Bar)
-                                 └─ .… (Transalted Wiki Pages)
+> docs
+> ├─ README.md (Home)
+> ├─ example.md (Show some editing skills)
+> ├─ locales.js (tell doc how to handle translation file)
+> ├─ .vuepress (tell doc how to render and generate static html file)
+> │          ├─ styles (Set Text,Backguard,Layout etc.)
+> │          ├─ public (Store some public assets like pictures)
+> │          ├─ config (default settings when Translation do not work correctly)
+> │          └─ config.js (General setting)
+> ├─ Translation
+> │         ├─ translations.js (tranlate some fragmentary words/manage sidebar)
+> │         └─ zh.js (translated words)
+> ├─ wiki
+> │  ├─ sidebar_contents.js (Order Side Bar)
+> │  └─ .… (Wiki Pages)
+> └─ zh_CN
+>     ├─ README.md (Translated Home)
+>     └─ wiki
+>         ├─ sidebar_contents.js (Order Translated Side Bar)
+>         └─ .… (Transalted Wiki Pages)
