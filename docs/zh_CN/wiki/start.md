@@ -1,8 +1,8 @@
 ---
-title: Let's Start
+title: 让我们开始吧
 ---
 
-:warning: In this page, we will explain how to start using GriefDefender in your Bukkit/Sponge server step by step. :warning: 
+:warning: 在本页面，我们将一步步地介绍如何在您的Bukkit/Sponge服务器上使用GriefDefender :warning: 
 
 ## Getting Started
 
