@@ -11,13 +11,13 @@ title: 让我们开始吧
 * 权限插件[LuckPerms](https://luckperms.github.io/). 
 > **注意: GD 仅支持 LuckPerms v5.**
 
-:warning: GD重点使用LP的 `default` 权限组. 请确保你的LP权限组都是`default`权限组的继承权限组，否则GD无法正常起效. LP 也强烈建议不要禁用这个权限组. See https://github.com/lucko/LuckPerms/wiki/Default-Groups#where-to-start :warning: 
+:warning: GD重点使用LP的 `default` 权限组. 请确保你的LP权限组都是`default`权限组的继承权限组，否则GD无法正常起效. LP 也强烈建议不要禁用这个权限组. 请看https://github.com/lucko/LuckPerms/wiki/Default-Groups#where-to-start :warning: 
 
 ##### Sponge
 * 最新版 [Sponge].
 
 ##### Bukkit
-* 最新版 [Paper] or [Spigot].
+* 最新版 [Paper] 或 [Spigot].
 
 ### 安装
 
