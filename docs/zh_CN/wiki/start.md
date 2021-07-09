@@ -4,25 +4,25 @@ title: 让我们开始吧
 
 :warning: 在本页面，我们将一步步地介绍如何在您的Bukkit/Sponge服务器上使用GriefDefender :warning: 
 
-## Getting Started
+## 初始化
 
-### Requirements
+### 环境需求
 
-* [LuckPerms](https://luckperms.github.io/) permission plugin.  
-> **NOTE: GD only supports LuckPerms v5.**
+* 权限插件[LuckPerms](https://luckperms.github.io/). 
+> **注意: GD 仅支持 LuckPerms v5.**
 
-:warning: GD makes heavy use of LP's `default` group. Make sure your LP groups are inheriting the `default` group or GD will not function properly. LP also strongly recommends to never disable this group. See https://github.com/lucko/LuckPerms/wiki/Default-Groups#where-to-start :warning: 
+:warning: GD重点使用LP的 `default` 权限组. 请确保你的LP权限组都是`default`权限组的继承权限组，否则GD无法正常起效. LP 也强烈建议不要禁用这个权限组. See https://github.com/lucko/LuckPerms/wiki/Default-Groups#where-to-start :warning: 
 
 ##### Sponge
-* An up-to-date [Sponge].
+* 最新版 [Sponge].
 
 ##### Bukkit
-* An up-to-date [Paper] or [Spigot].
+* 最新版 [Paper] or [Spigot].
 
-### Installation
+### 安装
 
-:warning: If using `spark`, update to latest version at https://ci.lucko.me/job/spark/ :warning:   
-:warning: Set `spawn-protection` to `0` in `server.properties` to allow GD to protect spawn. If this is not set properly, the server will block actions before GD has a chance to see it. :warning:   
+:warning: 如果正在使用`spark`, 请从 https://ci.lucko.me/job/spark/ 升级至最新版:warning:   
+:warning: 请在`server.properties`中把`spawn-protection` 设为 `0` 来允许GD保护出生点. If this is not set properly, the server will block actions before GD has a chance to see it. :warning:   
 
 Download the latest GriefDefender jar from spigot's plugin website. Be sure to choose your correct Minecraft version, and keep it always updated! After the download drop it into your server's plugins folder.
 
